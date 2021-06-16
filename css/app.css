@@ -1,0 +1,156 @@
+@import "jquery-ui.css";
+
+body {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	margin: 20px;
+}
+* {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+form {
+	float: left;
+	min-width: 300px;
+	width: 30%;
+	height: auto;
+	margin-top: 3%;
+}
+
+#flights-container {
+	float: left;
+	margin-top: 0.6em;
+	width: 70%;
+	padding: 0 1em;
+}
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+tbody tr:nth-child(even) {
+	background: #e7e7e7;
+}
+th {
+	border-bottom: 2px solid #ddd;
+}
+th, td {
+	text-align: left;
+	padding: 0.8em;
+}
+td {
+	border-top: 1px solid #ddd;
+}
+caption {
+	font-size: 1.5em;
+	font-weight: bold;
+	padding-bottom: 0.5em;
+}
+caption span {
+	font-size: 0.8em;
+}
+fieldset {
+	padding: 0 1em 1em 1em;
+}
+legend {
+	font-weight: bold;
+	font-size: 1.5em;
+	color: purple;
+}
+fieldset > div > label {
+	font-weight: bold;
+	display: block;
+	margin: 0.7em 0 0.3em 0;
+}
+input {
+	padding: 0.5em;
+	font-size: 1em;
+	width: 100%;
+}
+.ui-spinner {
+	width: 100%;
+	padding: 0.2em;
+}
+select {
+	width: 200px;
+}
+.ui-priority-primary {
+	background: rgb(171, 32, 171);
+	color: white;
+	font-weight: normal;
+}
+#search {
+	width: 100%;
+	margin-top: 1em;
+	box-shadow:inset 0px 1px 0px 0px #ddc8eb;
+	background:linear-gradient(to bottom, #8a40c7 5%, #9e79bd 100%);
+	background-color:#8a40c7;
+	border-radius:6px;
+	border:1px solid #b07ad6;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:1.5em;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #9752cc;
+}
+
+
+.ui-progressbar-value {
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+.ui-autocomplete {
+	max-height: 200px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+
+#search:hover {
+	background:linear-gradient(to bottom, #9e79bd 5%, #8a40c7 100%);
+	background-color:#9e79bd;
+}
+#search:active {
+	position:relative;
+	top:1px;
+}
+
+@media (max-width: 1025px) {
+	#flights-container {
+		width: calc( 100% - 320px );
+	}
+}
+@media (max-width: 800px) {
+	#flights-container, form {
+		width: 100%;
+	}
+	input, .ui-spinner {
+		width: 200px;
+	}
+	.ui-buttonset, .ui-selectmenu-button {
+		font-size: 0.9em;
+	}
+	fieldset > div {
+		float: left;
+		margin-left: 0.5em;
+		height: 70px;
+		width: 210px;
+	}
+	fieldset > div:last-child {
+		width: 100%;
+	}
+}
+
+@media (max-width: 500px) {
+	td, th {
+		padding: 0.8em 0.1em;
+	}
+	#flights-container {
+		padding: 0;
+	}
+	fieldset > div {
+		width: 100%;
+	}
+}

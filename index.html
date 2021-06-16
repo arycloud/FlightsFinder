@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Search for a Flight!</title>
+	<link href="css/app.css" rel="stylesheet">
+</head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Search for a Flight</legend>
+            <div>
+                <label for="from-airport">From:</label>
+                <input id="from-airport" autocomplete="off" required>
+            </div>
+            <div>
+                <label for="to-airport">To:</label>
+                <input id="to-airport" autocomplete="off" required>
+            </div>
+            <div>
+                <label for="date">Date:</label>
+                <input type="date" id="date" placeholder="yy-mm-dd" required>
+            </div>
+            <div>
+                <button id="search" class="ui-button-purple">Search</button>
+            </div>
+        </fieldset>
+        </form>
+
+        <div id="flights-container"></div>
+
+        <script src="js/require.js" data-main="js/app"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
